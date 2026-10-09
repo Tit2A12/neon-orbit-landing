@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080912">
+<meta name="description" content="NEON ORBIT — Make room for what's next.">
+<title>NEON ORBIT — The Future, Closer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080912;--panel:#111321;--text:#f4f5ff;--muted:#9a9db7;--purple:#a78bfa;--cyan:#66f2e5;--line:rgba(255,255,255,.12);--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 75% 12%,rgba(114,73,255,.19),transparent 34%),radial-gradient(ellipse at 5% 50%,rgba(35,220,203,.08),transparent 30%)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 48px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.logo{font:700 1.12rem "Space Grotesk",sans-serif;letter-spacing:.13em}.logo span{color:var(--cyan)}.nav-links{display:flex;gap:30px;color:#c1c3d6;font-size:.9rem}.nav-links a:hover{color:var(--cyan)}
+.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 18px;border-radius:999px;font-weight:700;font-size:.9rem;transition:transform .2s,box-shadow .2s,background .2s}.nav-cta{border:1px solid var(--line)}.nav-cta:hover{border-color:var(--cyan)}
+.hero{min-height:650px;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:24px;padding:66px 0 88px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--cyan);text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}h1,h2,h3,p{margin-top:0}h1{font:600 clamp(3.3rem,7vw,6.15rem)/.99 "Space Grotesk",sans-serif;letter-spacing:-.075em;margin:24px 0}h1 em{font-style:normal;color:var(--purple)}.hero-copy{max-width:510px;color:var(--muted);font-size:1.08rem;margin-bottom:30px}.actions{display:flex;flex-wrap:wrap;gap:12px}.button.primary{color:#080912;background:var(--cyan);box-shadow:0 0 34px rgba(102,242,229,.17)}.button.primary:hover{transform:translateY(-3px);box-shadow:0 0 42px rgba(102,242,229,.3)}.button.secondary{border:1px solid var(--line)}.button.secondary:hover{border-color:var(--purple);transform:translateY(-3px)}
+.hero-note{display:flex;align-items:center;gap:12px;margin-top:38px;color:var(--muted);font-size:.82rem}.avatars{display:flex}.avatar{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;border:2px solid var(--bg);margin-left:-7px;background:linear-gradient(135deg,#a78bfa,#66f2e5);color:#111;font-size:.65rem;font-weight:800}.avatar:first-child{margin-left:0}
+.visual{position:relative;min-height:450px;display:grid;place-items:center;isolation:isolate}.orb{position:relative;width:min(340px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 25%,#d4c4ff 0,#9870ff 12%,#5c39bd 30%,#17122f 57%,#090a15 70%);box-shadow:inset -24px -24px 50px #000a,inset 10px 8px 30px #ffffff2e,0 0 85px #8257ff38;animation:float 6s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;inset:-15%;border:1px solid #a78bfa80;border-radius:50%;transform:rotate(-28deg) scaleY(.28)}.orb:after{inset:-25%;border-color:#66f2e559;transform:rotate(48deg) scaleY(.25)}.orbit{position:absolute;width:410px;max-width:100%;aspect-ratio:1;border:1px solid #ffffff1f;border-radius:50%;transform:rotate(-28deg) scaleY(.38)}.orbit.two{width:470px;transform:rotate(45deg) scaleY(.32);border-color:#66f2e52e}.spark{position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 20px var(--cyan);top:22%;right:12%}.float-card{position:absolute;right:0;bottom:48px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:#111321cc;backdrop-filter:blur(12px);box-shadow:0 16px 50px #0005}.float-card small{display:block;color:var(--muted);font-size:.72rem}.float-card strong{font:600 1.2rem "Space Grotesk",sans-serif}.float-card strong span{color:var(--cyan)}
+.section{padding:78px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.section h2{font:600 clamp(2rem,4vw,3.2rem)/1.1 "Space Grotesk",sans-serif;letter-spacing:-.05em;margin:12px 0 0}.section-intro{max-width:390px;color:var(--muted);margin-bottom:4px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:25px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,#ffffff0b,#ffffff03)}.feature-icon{display:grid;place-items:center;width:45px;height:45px;margin-bottom:25px;border-radius:14px;color:var(--cyan);background:#66f2e517;font-size:1.3rem}.feature h3{font:600 1.15rem "Space Grotesk",sans-serif;margin-bottom:9px}.feature p{color:var(--muted);font-size:.92rem;margin-bottom:0}.manifesto{margin:50px 0 80px;padding:clamp(30px,6vw,68px);border:1px solid #a78bfa47;border-radius:28px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#a78bfa29,transparent 65%),#10111e}.manifesto h2{max-width:740px;margin:14px auto 20px}.manifesto p{max-width:580px;margin:0 auto 25px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-inner p{margin:0}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:translateY(0)}@keyframes float{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-14px) rotate(3deg)}}
+@media(max-width:760px){.wrap{width:min(100% - 32px,560px)}.nav{padding:18px 0}.nav-links{display:none}.hero{grid-template-columns:1fr;padding:60px 0 48px;gap:5px}h1{font-size:clamp(3.35rem,15vw,5rem)}.visual{min-height:380px}.orb{width:270px}.orbit{width:340px}.orbit.two{width:390px}.float-card{right:2px;bottom:20px}.section{padding:52px 0}.section-head{display:block}.section-intro{margin-top:15px}.features{grid-template-columns:1fr}.feature{padding:22px}.manifesto{margin:24px 0 48px}.footer-inner{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+<a class="logo" href="#" aria-label="NEON ORBIT trang chủ">NEON<span>✳</span>ORBIT</a>
+<nav class="nav-links" aria-label="Điều hướng chính"><a href="#vision">Tầm nhìn</a><a href="#features">Khám phá</a><a href="#join">Tham gia</a></nav>
+<a class="nav-cta" href="#join">Bắt đầu <span aria-hidden="true">↗</span></a>
+</header>
+<main>
+<section class="wrap hero">
+<div class="hero-content reveal">
+<div class="eyebrow"><span class="dot"></span>Một kỷ nguyên mới đang đến</div>
+<h1>The future,<br>just got <em>closer.</em></h1>
+<p class="hero-copy">Một không gian cho những ý tưởng vượt khỏi giới hạn. Khám phá công nghệ, sáng tạo và những khả năng chưa từng được tưởng tượng.</p>
+<div class="actions"><a class="button primary" href="#vision">Khám phá vũ trụ <span aria-hidden="true">↗</span></a><a class="button secondary" href="#features">Tìm hiểu thêm</a></div>
+<div class="hero-note"><div class="avatars" aria-hidden="true"><span class="avatar">A</span><span class="avatar">M</span><span class="avatar">K</span></div><span>Được tạo cho những người luôn tò mò.</span></div>
+</div>
+<div class="visual reveal" aria-label="Quả cầu neon trừu tượng"><div class="orbit"></div><div class="orbit two"></div><div class="orb"></div><span class="spark"></span><div class="float-card"><small>TRẠNG THÁI HỆ THỐNG</small><strong><span>●</span> All systems go</strong></div></div>
+</section>
+<section class="wrap section" id="vision">
+<div class="section-head reveal"><div><div class="eyebrow">01 / Tầm nhìn</div><h2>Không chỉ là tương lai.<br>Là điều tiếp theo.</h2></div><p class="section-intro">Chúng ta không chờ đợi tương lai xuất hiện. Chúng ta thử nghiệm, xây dựng và biến những điều không thể thành có thể.</p></div>
+<div class="features" id="features">
+<article class="feature reveal"><div class="feature-icon">✳</div><h3>Tư duy khác biệt</h3><p>Phá vỡ những khuôn mẫu cũ. Mọi bước đột phá đều bắt đầu từ một câu hỏi khác đi.</p></article>
+<article class="feature reveal"><div class="feature-icon">⌁</div><h3>Công nghệ có ý nghĩa</h3><p>Đón nhận đổi mới với mục tiêu rõ ràng: tạo ra trải nghiệm hữu ích, tinh tế và dễ tiếp cận.</p></article>
+<article class="feature reveal"><div class="feature-icon">◉</div><h3>Luôn tiến về phía trước</h3><p>Thử nghiệm nhanh, học hỏi liên tục và không ngừng mở rộng giới hạn của bản thân.</p></article>
+</div>
+</section>
+<section class="wrap manifesto reveal" id="join"><div class="eyebrow"><span class="dot"></span>Tọa độ tiếp theo: chính bạn</div><h2>Ý tưởng lớn bắt đầu từ một bước nhỏ.</h2><p>Đây mới chỉ là điểm khởi đầu. Hãy biến trang này thành dự án của riêng bạn — theo cách bạn muốn.</p><a class="button primary" href="mailto:hello@example.com">Hãy cùng bắt đầu <span aria-hidden="true">↗</span></a></section>
+</main>
+<footer><div class="wrap footer-inner"><a class="logo" href="#">NEON<span>✳</span>ORBIT</a><p>© <span id="year"></span> NEON ORBIT. Một ý tưởng, vô vàn khả năng.</p><a href="#">Trở về đầu trang ↑</a></div></footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}})},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
