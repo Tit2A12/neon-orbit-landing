@@ -1,20 +1,19 @@
-# NEON ORBIT — Landing Page
+# NEON STUDY — Đấu trường kiến thức
 
-A responsive, single-file landing page concept with a futuristic neon aesthetic.
+Game ôn tập kiến thức bằng HTML/CSS/JavaScript thuần, phong cách neon tương lai.
 
-## Customize
-- Edit the copy and sections in `index.html`.
-- Adjust colors in the CSS `:root` variables near the top.
-- The page uses plain HTML, CSS, and JavaScript; no build step or dependencies are required.
-- Replace `hello@example.com` with your real contact address.
+## Tính năng
+- Thử thách trắc nghiệm, chấm điểm, combo và XP.
+- Thẻ ghi nhớ để ôn câu hỏi và đáp án.
+- Tự tạo, xóa và quản lý câu hỏi.
+- Nhập/xuất bộ câu hỏi dạng JSON.
+- Lưu XP, tiến độ và câu hỏi riêng trong trình duyệt bằng localStorage.
+- Responsive trên điện thoại và máy tính; không cần cài thư viện.
 
-## Run locally
-Open `index.html` in your browser.
+## Chạy
+Mở `index.html` bằng trình duyệt.
 
-## Deploy to Vercel
-1. Import this GitHub repository at https://vercel.com/new
-2. Choose **Other** as the framework preset if asked.
-3. Leave Build Command and Output Directory empty/default for this static site.
-4. Click **Deploy**.
+## Deploy lên Vercel
+Import repository này tại https://vercel.com/new. Chọn framework preset **Other** nếu được hỏi; đây là trang tĩnh không cần build command. Nếu repo đã kết nối Vercel, mỗi lần push lên nhánh production sẽ tự kích hoạt deploy mới.
 
-Vercel will automatically redeploy when you push future commits to the connected repository.
+Lưu ý: câu hỏi mẫu là kiến thức tổng quát. Hãy thêm câu hỏi của riêng bạn trong mục **Thêm kiến thức của bạn**; dữ liệu được lưu cục bộ trên trình duyệt hiện tại.
